@@ -6,10 +6,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>SmS Node</title>
 
+  {{!-- Bootswatch --}}
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.0/solar/bootstrap.min.css">
+
 </head>
 
 <body>
-  {{{body}}}
+  {{>navigation}}
+
+  <div class="container p-4">
+    {{{body}}}
+  </div>
 </body>
 
 </html>

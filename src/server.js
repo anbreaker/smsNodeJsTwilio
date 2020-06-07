@@ -1,5 +1,6 @@
 const express = require('express');
 const exphbs = require('express-handlebars');
+const morgan = require('morgan');
 const path = require('path');
 
 const app = express();
@@ -25,6 +26,7 @@ app.engine(
 app.set('view engine', '.hbs');
 
 // <------->  Middlewares<------->
+app.use(morgan('dev'));
 
 // <------->  Routes<------->
 app.use(require('./routes/index.routes'));

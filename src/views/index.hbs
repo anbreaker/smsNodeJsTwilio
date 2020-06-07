@@ -1,4 +1,13 @@
-<h1>Hello World</h1>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, similique explicabo commodi praesentium quae
-    repellendus velit quasi placeat. Debitis, harum. Asperiores minima sit ipsam nihil perferendis animi, dolorum velit
-    unde.</p>
+<div class="row">
+  <div class="col-md-4">
+    <form class="card card-body" action="/send-sms" method="POST">
+      <div class="form-group">
+        <input type="text" class="form-control" placeholder="Write your messages" autofocus>
+      </div>
+      <div class="form-group">
+        <input type="text" class="form-control" placeholder="+34600100200-" autocomplete="off">
+      </div>
+      <button class="btn btn-primary btn-block">Send</button>
+    </form>
+  </div>
+</div>
