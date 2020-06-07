@@ -25,7 +25,7 @@ app.engine(
 // Template engine configuration!!
 app.set('view engine', '.hbs');
 
-// <------->  Middlewares<------->
+// <------->  Middlewares  <------->
 app.use(morgan('dev'));
 
 // Objecto to Json (Post)
@@ -33,10 +33,10 @@ app.use(express.json());
 // Form sends data, understand it, but not accept images etc...(Methos of Express)
 app.use(express.urlencoded({extended: false}));
 
-// <------->  Routes<------->
+// <------->  Routes  <------->
 app.use(require('./routes/index.routes'));
 
-// <------->  Static Files<------->
+// <------->  Static Files  <------->
 app.use(express.static(path.join(__dirname, 'public')));
 
 module.exports = app;

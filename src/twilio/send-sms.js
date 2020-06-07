@@ -14,7 +14,7 @@ async function sendMessage(body, phone) {
       from: '+19093039448',
       body: body,
     });
-    console.log(message.sid);
+    // console.log(message);
     return message;
   } catch (error) {
     console.log(error);
