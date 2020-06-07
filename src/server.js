@@ -20,6 +20,7 @@ app.engine(
     partialsDir: path.join(app.get('views'), 'partials'),
     defaultLayout: 'main.hbs',
     extname: '.hbs',
+    helpers: require('./libs/resources.handlebars'),
   })
 );
 // Template engine configuration!!
