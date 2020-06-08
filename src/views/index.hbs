@@ -14,24 +14,18 @@
   </div>
   <div class="col-md-6">
     {{#if smsList}}
-
-    {{#each smsList}}
-
-    <div class="card card-body">
-      <p>{{Body}}</p>
-
-      <span>
-        {{To}}
-      </span>
-
-      {{!-- <span>{{hideNumber To}}</span> --}}
-    </div>
-
-    {{/each}}
-
+    <ul class="list-group" style="height: 70vh; overflow-y: auto;">
+      {{#each smsList}}
+      <div class="list-group-item list-group-item-success list-group-item-action">
+        <p>{{Body}}</p>
+        <span>{{To}}</span>
+        <span>{{From}}</span>
+        {{!-- <span>{{hideNumber To}}</span> --}}
+      </div>
+      {{/each}}
+    </ul>
     {{else}}
     <p>No sms yer</p>
     {{/if}}
-
   </div>
 </div>
