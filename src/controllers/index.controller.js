@@ -2,8 +2,10 @@ const MessagingResponse = require('twilio').twiml.MessagingResponse;
 const {sendMessage} = require('../twilio/send-sms');
 const SMS = require('../models/sms');
 
+const {getSockect} = require('../sockets');
+
 const indexController = async (req, res) => {
-  const smsList = await SMS.find().lean();
+  const smsList = await SMS.find().sort('-createdAt').lean();
   res.render('index', {smsList});
 };
 
@@ -30,6 +32,8 @@ const reciveMessage = async (req, res) => {
     To: req.body.To,
     FromCountry: req.body.FromCountry,
   });
+
+  getSockect().emit('new sms', savedSMS);
 
   const twiml = new MessagingResponse();
 

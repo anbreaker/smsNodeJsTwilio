@@ -14,14 +14,14 @@
   </div>
   <div class="col-md-6">
     {{#if smsList}}
-    <ul class="list-group" style="height: 70vh; overflow-y: auto;">
+    <ul class="list-group" style="height: 70vh; overflow-y: auto;" id="sms">
       {{#each smsList}}
-      <div class="list-group-item list-group-item-success list-group-item-action">
+      <li class="list-group-item list-group-item-success list-group-item-action">
         <p>{{Body}}</p>
         <span>{{To}}</span>
         <span>{{From}}</span>
         {{!-- <span>{{hideNumber To}}</span> --}}
-      </div>
+      </li>
       {{/each}}
     </ul>
     {{else}}
