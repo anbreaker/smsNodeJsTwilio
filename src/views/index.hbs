@@ -18,8 +18,10 @@
       {{#each smsList}}
       <li class="list-group-item list-group-item-success list-group-item-action">
         <p>{{Body}}</p>
-        <span>{{To}}</span>
-        <span>{{From}}</span>
+        <span>id: {{_id}}</span><br>
+        <span>To: {{To}}</span><br>
+        <span>From: {{From}}</span><br>
+        <span>Time: {{timeago createdAt}}</span><br>
         {{!-- <span>{{hideNumber To}}</span> --}}
       </li>
       {{/each}}
