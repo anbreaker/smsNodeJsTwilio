@@ -1,4 +1,9 @@
 # smsNodeJsTwilio
 
 SMS & Nodejs | Text Messaging Application with Twilio, Nodejs, Mongodb & Socketio
-echo "# smsNodeJsTwilio" >> README.md
+
+Use ngrok
+
+Tutorial by Fazt Code
+
+- https://www.youtube.com/watch?v=sw3CPCRk-XE
