@@ -8,7 +8,7 @@
     "express-handlebars": "^4.0.4",
     "mongoose": "^5.9.17",
     "morgan": "^1.10.0",
-    "socket.io": "^2.3.0",
+    "socket.io": "^2.4.0",
     "timeago.js": "^4.0.2",
     "twilio": "^3.45.0"
   },
