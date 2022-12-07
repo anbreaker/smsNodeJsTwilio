@@ -4,7 +4,7 @@
   "description": "SMS & Nodejs | Text Messaging Application with Twilio, Nodejs, Mongodb & Socketio echo \"# smsNodeJsTwilio\" >> README.md",
   "main": "index.js",
   "dependencies": {
-    "express": "^4.17.1",
+    "express": "^4.18.2",
     "express-handlebars": "^4.0.4",
     "mongoose": "^5.9.17",
     "morgan": "^1.10.0",
